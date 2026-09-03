@@ -42,6 +42,7 @@
     "mcp": "tsx src/mcp-entry.ts",
     "prepare": "npm run build",
     "prepublishOnly": "npm run check",
+    "smoke:package": "node scripts/release-smoke.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit"
