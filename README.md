@@ -1,5 +1,9 @@
 # Life Story Vault
 
+[![CI](https://github.com/notvasub/life-story/actions/workflows/ci.yml/badge.svg)](https://github.com/notvasub/life-story/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/notvasub/life-story)](https://github.com/notvasub/life-story/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Turn years of essays, applications, and notes into a private story library your AI assistant can actually search.
 
 Life Story Vault imports a Notion export, stores the writing as ordinary Markdown, connects recurring experiences into reusable story threads, and exposes the result through a local [Model Context Protocol](https://modelcontextprotocol.io/) server. The bundled `story-retriever` skill then finds evidence-backed stories for application, scholarship, interview, portfolio, and reflective-writing prompts.
@@ -29,6 +33,14 @@ flowchart LR
 ## Quick start
 
 Requirements: Node.js 20 or newer and an MCP-capable AI client.
+
+Install the ready-to-run release:
+
+```bash
+npm install --global https://github.com/notvasub/life-story/releases/download/v1.0.0/life-story-vault-1.0.0.tgz
+```
+
+Or build from source:
 
 ```bash
 git clone https://github.com/notvasub/life-story.git
