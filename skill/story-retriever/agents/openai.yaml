@@ -1,0 +1,12 @@
+interface:
+  display_name: "Story Retriever"
+  short_description: "Find source-backed stories for personal prompts"
+  default_prompt: "Use $story-retriever to find the strongest stories for this prompt."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "story_vault"
+      description: "Local Story Vault search and curation tools"
+      transport: "stdio"
+policy:
+  allow_implicit_invocation: true
